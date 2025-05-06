@@ -1,21 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prueba Software Arrows</title>
+</head>
 <body>
-  <!-- tu contenido -->
-  <h1> Hola</h1>
-  <!-- SDK de Software Arrows -->
+  <h1>Mi Web de Prueba</h1>
+  <p>Si todo está bien configurado, la bandeja de Software Arrows debería aparecer abajo a la derecha.</p>
+
   <script>
     (function(d,t) {
-      var BASE_URL="https://app.softwarearrows.com";
-      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=BASE_URL+"/packs/js/sdk.js";
+      var BASE_URL = "https://app.softwarearrows.com";
+      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
       g.defer = true;
       g.async = true;
-      s.parentNode.insertBefore(g,s);
-      g.onload=function(){
-        window.arrowsSDK.run({
-          websiteToken: 'YhbXvs3zcHAddsN17nBhnKSL',
+      s.parentNode.insertBefore(g, s);
+      g.onload = function() {
+        window.arrowsSDK?.run({
+          websiteToken: 'YhbXvs3zcHAddsN17nBhnKSL', // Reemplazá esto si hace falta
           baseUrl: BASE_URL
-        })
-      }
-    })(document,"script");
+        });
+      };
+    })(document, "script");
   </script>
 </body>
+</html>
